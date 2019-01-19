@@ -1,0 +1,216 @@
+
+/* Global */
+html {
+	scroll-behavior: smooth;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Slabo 27px';
+}
+hr.title-divider-dark {
+	border: none;
+	height: 1px;
+	color: gray;
+	background-color: gray;
+	width: 80%;
+} 
+hr.title-divider-light {
+	border: none;
+	height: 1px;
+	color: white;
+	background-color: gray;
+	width: 80%;
+} 
+
+body {
+	position: relative;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar-brand:hover{
+	color: white;
+}
+
+.navbar-brand img {
+	max-width: 70%;
+	max-height: 70%;
+}
+.nav-item a { 
+ 	color: lightgray; 
+ } 
+ .nav-item .active { 
+ color: white; 
+ 	border-bottom: 1px solid white;
+ } 
+
+/* Welcome Section */
+.welcome {
+	position: relative;
+
+}
+.parallax-header {
+	background-image: url('../img/robot.jpg');
+	min-height: 800px; 
+	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.welcome-text {
+	font-family: 'Charm', cursive;
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 5%;
+}
+
+.welcome a {
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #6669C5;
+	color: white;
+
+}
+#quote {
+	font-size: 3em;
+}
+
+/* Perkembangan */
+.perkembangan {
+	padding: 70px 0;
+	color: #2B0548;
+}
+
+/* Inovasi */
+.inovasi {
+	background-color: #2B0548;
+	color: white;
+	padding: 70px 0;
+}
+.inovasi-top {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Inovasi Gatebox */
+.inovasi-gatebox {
+	align-items: center;
+}
+/* Inovasi VNTNA */
+.inovasi-vntna {
+	margin-top: 20px;
+	align-items: center;
+}
+
+/* Pros & Cons */
+.pros-cons {
+	padding: 60px;
+}
+.pros-cons-gatebox, .pros-cons-vntna {
+	padding: 1em;
+}
+.pros-cons-vntna {
+	background-color: #2B0548; 
+	color: white;
+	border-left: white;
+	border-radius: 7px;
+}
+.pros-cons-gatebox {
+	background-color: white; 
+	color: #2B0548;
+	border-radius: 7px;
+}
+
+/* footer */
+footer {
+	background-color: #4630AB;
+	padding: 20px;
+	color: white;
+}
+
+
+/* Kesimpulan */
+.kesimpulan {
+	background-color: white;
+	color: #2B0548;
+	padding: 70px 0;
+}
+.kesimpulan h2, p {
+	margin: 0;
+}
+.kesimpulan p {
+	text-align: center;
+}
+
+/* Go Top Button */
+#back-to-top {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background-color: #6669C5;
+	bottom: 30px;
+	right: 30px;
+
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	font-size: 22px;
+	display: none;
+}
+
+#back-to-top:hover {
+	background-color: #4630AB;
+}
+
+.parallax {
+
+  background-image: url("../img/aiabstract.jpg");
+
+
+  min-height: 500px; 
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 992px) {
+	.navbar {
+		background-color: #4630AB !important;
+	}
+	.nav-link {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 99%;
+	}
+
+	button span {
+    	color: white;
+    	font-size: 25px;
+	}
+	.pros-cons-vntna {
+		margin-top: 20px;
+	}
+
+	.pros-cons {
+		padding: 20px 0 ;
+	}
+}
